@@ -12,4 +12,4 @@ final_data <-merge(clean_data,arrests,by="stateName")
 #str(clean_data)
 #str(arrests)
 final_data$area <- state.area
-str(state.center)
+final_data$x < state.center[1]
