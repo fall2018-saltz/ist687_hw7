@@ -13,3 +13,4 @@ str(final_data)
 #str(arrests)
 final_data$area <- state.area
 final_data$centerX <-state.center[1]
+final_data$centerY <-state.center[2]
