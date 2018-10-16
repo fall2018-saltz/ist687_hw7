@@ -23,4 +23,4 @@ cleanCensus <- readStates(raw_data)
 clean_data <- cleanCensus
 
 
-str(state.name)
+str(state.area)
