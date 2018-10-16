@@ -33,6 +33,16 @@
             ],
             "source": "data.csv",
             "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "final_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "merge.R",
+            "target": "final_data.csv"
         }
     ],
     "nodes": [
@@ -57,6 +67,6 @@
             "name": "final_data.csv"
         }
     ],
-    "updated_at": "2018-10-16 23:31:50",
+    "updated_at": "2018-10-16 23:32:12",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
