@@ -4,7 +4,7 @@
 arrests <- USArrests
 #creating a column named stateName
 arrests$stateName<-rownames(arrests)
-str(arrests)
+#str(arrests)
 #Merging the data
 final_data <-merge(clean_data,arrests,by="stateName")
  
@@ -12,4 +12,4 @@ final_data <-merge(clean_data,arrests,by="stateName")
 #str(clean_data)
 #str(arrests)
 final_data$area <- state.area
- final_data$x <-state.center[1]
+final_data$x <-state.center[1]
