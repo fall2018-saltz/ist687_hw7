@@ -48,10 +48,15 @@
             "name": "data.csv"
         },
         {
+            "assigned_to": "amgadge",
             "desc": "",
-            "name": "merge.R"
+            "name": "merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "final_data.csv"
         }
     ],
-    "updated_at": "2018-10-16 23:25:49",
+    "updated_at": "2018-10-16 23:31:50",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
