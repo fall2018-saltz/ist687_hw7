@@ -25,4 +25,5 @@ clean_data <- cleanCensus
 
 #clean_data$area <-state.area
 #clean_data$center <- state.center 
-clean_data$stateName[51]state.name)
+clean_data$stateName[51]
+state.name[50]
