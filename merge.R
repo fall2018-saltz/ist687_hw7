@@ -14,3 +14,4 @@ str(final_data)
 final_data$area <- state.area
 final_data$centerX <-state.center[1]
 final_data$centerY <-state.center[2]
+str(final_data)
