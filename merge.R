@@ -12,4 +12,4 @@ str(final_data)
 #str(clean_data)
 #str(arrests)
 final_data$area <- state.area
-str(state.center[1])
+final_data$x <- state.center[1]
