@@ -25,3 +25,4 @@ clean_data <- cleanCensus
 
 clean_data$area <-state.area
 clean_data$center <- state.center 
+str(clean_data$stateName)
