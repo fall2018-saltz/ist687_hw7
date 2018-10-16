@@ -23,3 +23,4 @@ cleanCensus <- readStates(raw_data)
 clean_data <- cleanCensus
 
 
+df(states)
