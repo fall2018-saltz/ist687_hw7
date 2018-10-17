@@ -19,7 +19,7 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
 
 
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
-                geom_map(map=usa,aes(color="black"))+
+                geom_map(map=usa)+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point()
