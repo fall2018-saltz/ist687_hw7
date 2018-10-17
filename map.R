@@ -20,7 +20,7 @@ map.pop <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill="white",color="black"))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                geom_point(final_data,aes(x=x,y=y),size=population,color='red')
+                geom_point(final_data,aes(x=x,y=y),size=final_data$population,color='red')
               
 
  
