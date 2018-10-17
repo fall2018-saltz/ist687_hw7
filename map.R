@@ -8,6 +8,7 @@ usa <- map_data('state')
 final_data$stateName <- tolower(final_data$stateName)
 
 # B: Generate a color coded map
+
 # To create color coded map of usa 
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
@@ -40,6 +41,7 @@ map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                          ylim(NY$lat-10,NY$lat+10)  
                  
 # zooming in near side of map with NYC in the map of usa which was showing points which represent the state and 
+# the size of the point represents the population. x`x`
 map.pop.northeast <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                          geom_map(map=usa,color="black",size=1)+
                          expand_limits(x=final_data$x,y=final_data$y)+
