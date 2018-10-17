@@ -23,4 +23,5 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=popu
                 geom_point()
               
 
+map.ny <-
  
