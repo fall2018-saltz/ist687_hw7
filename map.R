@@ -3,9 +3,9 @@
 library(ggplot2)
 #gets the data about the united state needed for the plot
 usa <- map_data('state')
+#lower casing the state names
 final_data$stateName <- tolower(final_data$stateName)
-str(final_data)
-library(ggmap)
+
 
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
