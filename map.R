@@ -1,2 +1,3 @@
 
-usa <- map_data("usa")
+usa <- map_data("state")
+
