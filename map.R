@@ -24,5 +24,5 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=popu
                 geom_point()
               
 NY <- geocode(source='dsk',"New York City,NY")
-
+str(NY)
 
