@@ -1,6 +1,7 @@
 
 #importing dependencies 
 library(ggplot2)
+#gets the data about the united state needed for the plot
 usa <- map_data('state')
 final_data$stateName <- tolower(final_data$stateName)
 str(final_data)
