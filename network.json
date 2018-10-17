@@ -53,6 +53,16 @@
             ],
             "source": "final_data.csv",
             "target": "map.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "map1.png"
         }
     ],
     "nodes": [
@@ -86,6 +96,6 @@
             "name": "map1.png"
         }
     ],
-    "updated_at": "2018-10-17 00:17:19",
+    "updated_at": "2018-10-17 00:17:40",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
