@@ -21,15 +21,14 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
 # To create a map of usa showing points on the map which represents the state and the size of point represnets
+# the population of that state
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 geom_map(map=usa,fill='white',color='black',size=0.25)+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point()
-                
+# retriving the co-ordinates of the NYC                
 NY <- geocode(source='dsk',"New York City,NY")
-str(NY)
-
 map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                          geom_map(map=usa,aes(fill=Murder))+
                          expand_limits(x=final_data$x,y=final_data$y)+
