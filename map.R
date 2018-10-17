@@ -54,6 +54,7 @@ map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                          scale_fill_gradient(low="blue", high="red")+
                          xlim(NY$lon-10,NY$lon+10)+
                          ylim(NY$lat-10,NY$lat+10)+
+                         ggtitle('map of usa zoomed on northeast side based on murder rate')
                  
 # zooming in near side of map with NYC in the map of usa which was showing points which represent the state and 
 # the size of the point represents the population. x`x`
