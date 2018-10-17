@@ -22,7 +22,7 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=popu
                 coord_map()+
                 geom_point()
               
-NY <- geocode(source='dsk',"New York,ny")
+NY <- geocode("New York,ny")
 
 map.ny <-
  
