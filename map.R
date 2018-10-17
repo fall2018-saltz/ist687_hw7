@@ -26,3 +26,11 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=popu
 NY <- geocode(source='dsk',"New York City,NY")
 str(NY)
 
+map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
+                geom_map(map=usa,aes(fill=Murder))+
+                expand_limits(x=final_data$x,y=final_data$y)+
+                coord_map()+
+                scale_fill_gradient(low="blue", high="red")+
+
+
+
