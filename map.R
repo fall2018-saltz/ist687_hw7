@@ -38,6 +38,7 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point()+
+                ggtitle('map of usa based on population')
                 
 # Step D: Zoom the map
 # (6) Repeat step C, but only show the states in the north east
@@ -52,7 +53,7 @@ map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                          coord_map()+
                          scale_fill_gradient(low="blue", high="red")+
                          xlim(NY$lon-10,NY$lon+10)+
-                         ylim(NY$lat-10,NY$lat+10)  
+                         ylim(NY$lat-10,NY$lat+10)+
                  
 # zooming in near side of map with NYC in the map of usa which was showing points which represent the state and 
 # the size of the point represents the population. x`x`
