@@ -37,7 +37,8 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 coord_map()+
                 geom_point()
                 
-                
+# Step D: Zoom the map
+# (6) Repeat step C, but only show the states in the north east
 # retriving the co-ordinates of the NYC                
 NY <- geocode(source='dsk',"New York City,NY")
 
