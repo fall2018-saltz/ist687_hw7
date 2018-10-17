@@ -77,10 +77,15 @@
             "name": "final_data.csv"
         },
         {
+            "assigned_to": "amgadge",
             "desc": "",
-            "name": "map.R"
+            "name": "map.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "map1.png"
         }
     ],
-    "updated_at": "2018-10-17 00:07:40",
+    "updated_at": "2018-10-17 00:17:19",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
