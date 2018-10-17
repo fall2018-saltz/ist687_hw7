@@ -16,11 +16,11 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 scale_fill_gradient(low="blue", high="red")
 
 
-map.pop <- ggplot(final_data,aes(map_id= stateName))+
+map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=population))+
                 geom_map(map=usa,aes(fill="white",color="black"))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                geom_point(final_data,aes(x=final_data$x,y=final_data$y))
+                geom_point()
               
 
  
