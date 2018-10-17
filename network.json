@@ -1,0 +1,153 @@
+{
+    "collaborators": [
+        "amgadge"
+    ],
+    "created_at": "2018-10-11 15:11:37",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "final_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "merge.R",
+            "target": "final_data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "final_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "final_data.csv",
+            "target": "map.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murder",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "MAPmurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.area",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "map1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.pop",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "map3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murder.northeast",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "map.murder.northeast.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.pop.northeast",
+                    "type": "png"
+                }
+            ],
+            "source": "map.R",
+            "target": "map.pop.northeast.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "amgadge",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "assigned_to": "amgadge",
+            "desc": "",
+            "name": "merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "final_data.csv"
+        },
+        {
+            "assigned_to": "amgadge",
+            "desc": "",
+            "name": "map.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "map1.png"
+        },
+        {
+            "name": "MAPmurder.png"
+        },
+        {
+            "name": "map3.png"
+        },
+        {
+            "name": "map.murder.northeast.png"
+        },
+        {
+            "name": "map.pop.northeast.png"
+        }
+    ],
+    "updated_at": "2018-10-17 00:51:03",
+    "url": "https://github.com/fall2018-saltz/ist687_hw7"
+}
