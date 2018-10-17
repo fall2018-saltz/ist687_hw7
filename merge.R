@@ -10,6 +10,7 @@ final_data <-merge(clean_data,arrests,by="stateName")
 
 #str(clean_data)
 #str(arrests)
+#Adding area column to the final data
 final_data$area <- state.area
 final_data$x <-state.center$x
 final_data$y <- state.center$y
