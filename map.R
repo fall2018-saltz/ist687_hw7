@@ -15,7 +15,8 @@ map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                scale_fill_gradient(low="blue", high="red")
+                scale_fill_gradient(low="blue", high="red")+
+                ggtitle('map of usa')
 
 #Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
 
@@ -25,7 +26,7 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=Murder))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                scale_fill_gradient(low="blue", high="red")
+                scale_fill_gradient(low="blue", high="red")+
 #(5) Show the population as a circle per state (the larger the population, the larger the circle), 
 # using the location defined by the center of each state              
 
@@ -39,6 +40,7 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 
 # Step D: Zoom the map
 # (6) Repeat step C, but only show the states in the north east
+
 # retriving the co-ordinates of the NYC                
 NY <- geocode(source='dsk',"New York City,NY")
 
@@ -59,9 +61,3 @@ map.pop.northeast <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=popula
                          coord_map()+
                          geom_point(color='red')+
                          xlim(NY$lon-10,NY$lon+10)+
-                         ylim(NY$lat-10,NY$lat+10)
-                
-                
-                
-
-
