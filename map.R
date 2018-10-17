@@ -10,13 +10,13 @@ final_data$stateName <- tolower(final_data$stateName)
 # STEP B: Generate a color coded map
 
 #(3)	Create a color coded map, based on the area of the state 
-# To create color coded map of usa 
+# To create color coded map of usa based on area
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")+
-                ggtitle('map of usa')
+                ggtitle('map of usa coded based on area')
 
 #Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
 
