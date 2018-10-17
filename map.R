@@ -7,8 +7,9 @@ usa <- map_data('state')
 #lower casing the state names
 final_data$stateName <- tolower(final_data$stateName)
 
-# B: Generate a color coded map
+# STEP B: Generate a color coded map
 
+#(3)	Create a color coded map, based on the area of the state 
 # To create color coded map of usa 
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
