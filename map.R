@@ -39,7 +39,9 @@ map.pop.northeast <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red'
                         geom_map(map=usa,aes(fill="white",color="black"))+
                          expand_limits(x=final_data$x,y=final_data$y)+
                          coord_map()+
-                         geom_point()+               
+                         geom_point()+
+                         xlim(NY$lon-10,NY$lon+10)+
+                         ylim(NY$lat-10,NY$lat+10)
                 
                 
                 
