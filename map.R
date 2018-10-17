@@ -8,18 +8,18 @@ usa <- map_data('state')
 final_data$stateName <- tolower(final_data$stateName)
 
 # B: Generate a color coded map
+# To create color coded map of usa 
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
-
+# To create colour shaded map of usa based on murder rate of each state
 map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=Murder))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
-
 
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 geom_map(map=usa,fill='white',color='black',size=0.25)+
