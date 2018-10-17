@@ -37,7 +37,7 @@ map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                  
 
 map.pop.northeast <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,color='red',size=population))+
-                         geom_map(map=usa,aes(color="black"))+
+                         geom_map(map=usa,color="black",size=1)+
                          expand_limits(x=final_data$x,y=final_data$y)+
                          coord_map()+
                          geom_point()+
