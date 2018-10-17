@@ -64,3 +64,5 @@ map.pop.northeast <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=popula
                          coord_map()+
                          geom_point(color='red')+
                          xlim(NY$lon-10,NY$lon+10)+
+                         ylim(NY$lat-10,NY$lat+10)+
+                         ggtitle('map of usa zoomed on northeast side based on population') 
