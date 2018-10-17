@@ -27,6 +27,7 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")+
+                ggtitle('map of usa based on murder rate')
 #(5) Show the population as a circle per state (the larger the population, the larger the circle), 
 # using the location defined by the center of each state              
 
@@ -36,7 +37,7 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 geom_map(map=usa,fill='white',color='black',size=0.25)+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                geom_point()
+                geom_point()+
                 
 # Step D: Zoom the map
 # (6) Repeat step C, but only show the states in the north east
