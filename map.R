@@ -1,12 +1,13 @@
 
 #importing dependencies 
 library(ggplot2)
+library(ggmap)
 #gets the data about the united state needed for the plot
 usa <- map_data('state')
 #lower casing the state names
 final_data$stateName <- tolower(final_data$stateName)
 
-
+# B: Generate a color coded map
 map.area <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=area))+
                 expand_limits(x=final_data$x,y=final_data$y)+
