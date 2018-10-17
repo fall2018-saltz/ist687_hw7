@@ -17,7 +17,8 @@ map.area <- ggplot(final_data,aes(map_id= stateName))+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
 
-#Step C: Create a color shaded map of the U.S. based on the Murder rate for each state                 
+#Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
+# (4)	Repeat step B, but color code the map based on the murder rate of each state.
 # To create colour shaded map of usa based on murder rate of each state
 map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 geom_map(map=usa,aes(fill=Murder))+
