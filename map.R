@@ -19,11 +19,11 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
 
 
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
-                geom_map(map=usa,aes(fill='white')+
+                geom_map(map=usa,aes(fill='white'))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point()
-              
+                
 NY <- geocode(source='dsk',"New York City,NY")
 str(NY)
 
