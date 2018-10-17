@@ -31,6 +31,7 @@ map.murder.northeast <- ggplot(final_data,aes(map_id= stateName))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")+
+                xslim(NY$lon-10,NY$lon+10)+
 
 
 
