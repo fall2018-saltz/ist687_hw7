@@ -27,7 +27,8 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
 #(5) Show the population as a circle per state (the larger the population, the larger the circle), 
-# using the location defined by the center of each state               
+# using the location defined by the center of each state              
+
 # To create a map of usa showing points on the map which represents the state and the size of point represnets
 # the population of that state
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
@@ -35,6 +36,8 @@ map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point()
+                
+                
 # retriving the co-ordinates of the NYC                
 NY <- geocode(source='dsk',"New York City,NY")
 
