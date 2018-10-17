@@ -133,8 +133,11 @@
         },
         {
             "name": "map.murder.northeast.png"
+        },
+        {
+            "name": "map.pop.northeast.png"
         }
     ],
-    "updated_at": "2018-10-17 00:47:41",
+    "updated_at": "2018-10-17 00:50:53",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
