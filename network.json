@@ -72,7 +72,7 @@
                 }
             ],
             "source": "map.R",
-            "target": "map1.png"
+            "target": "mapArea.png"
         },
         {
             "ports": [
@@ -133,7 +133,7 @@
             "task_status": "in progress"
         },
         {
-            "name": "map1.png"
+            "name": "mapArea.png"
         },
         {
             "name": "MAPmurder.png"
@@ -148,6 +148,6 @@
             "name": "map.pop.northeast.png"
         }
     ],
-    "updated_at": "2018-10-17 00:51:03",
+    "updated_at": "2018-10-17 20:42:55",
     "url": "https://github.com/fall2018-saltz/ist687_hw7"
 }
