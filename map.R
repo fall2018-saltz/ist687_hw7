@@ -18,6 +18,7 @@ map.area <- ggplot(final_data,aes(map_id= stateName))+
                 scale_fill_gradient(low="blue", high="red")
 
 #Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
+
 # (4)	Repeat step B, but color code the map based on the murder rate of each state.
 # To create colour shaded map of usa based on murder rate of each state
 map.murder <- ggplot(final_data,aes(map_id= stateName))+
@@ -25,6 +26,7 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 scale_fill_gradient(low="blue", high="red")
+#(5) Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state               
 # To create a map of usa showing points on the map which represents the state and the size of point represnets
 # the population of that state
 map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
