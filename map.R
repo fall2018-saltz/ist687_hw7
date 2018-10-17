@@ -1,4 +1,4 @@
 
 usa <- map_data("state")
-dummyDF <- data.frame(state.name,stringAsFactors=F)
+final_data$stateName <- tolower(final_data$stateName)   
 
