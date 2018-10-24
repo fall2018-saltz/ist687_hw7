@@ -35,7 +35,7 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
 # the population of that state
 map.pop <- ggplot(final_data,aes(map_id= stateName,size=population))+
                 geom_map(map=usa,fill='white',color='black',size=0.25)+
-                expand_limits(x=final_data$x,y=final_data$y)+
+                #expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
                 geom_point(aes(x=x,y=y))+
                 ggtitle('map of usa based on population')
