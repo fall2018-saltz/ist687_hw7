@@ -33,11 +33,11 @@ map.murder <- ggplot(final_data,aes(map_id= stateName))+
 
 # To create a map of usa showing points on the map which represents the state and the size of point represnets
 # the population of that state
-map.pop <- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+
+map.pop <- ggplot(final_data,aes(map_id= stateName,size=population))+
                 geom_map(map=usa,fill='white',color='black',size=0.25)+
                 expand_limits(x=final_data$x,y=final_data$y)+
                 coord_map()+
-                geom_point()+
+                geom_point(aes(x=x,y=y))+
                 ggtitle('map of usa based on population')
                 
 # Step D: Zoom the map
